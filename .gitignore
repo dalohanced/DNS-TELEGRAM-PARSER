@@ -1,9 +1,14 @@
+key.txt
+chromedriver.exe
+chromedriver
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-key.txt
-chromedriver.exe
+
 # C extensions
 *.so
 
