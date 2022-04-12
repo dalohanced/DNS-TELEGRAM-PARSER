@@ -108,10 +108,11 @@ def bred(message):
         bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
 
 
-driver = webdriver.Chrome('chromedriver.exe')  # Optional argument, if not specified will search path.
-chr_opt = Options().add_argument("--disable-extentions")
+
 
 def parse_dns(url):
+    driver = webdriver.Chrome('chromedriver.exe')  # Optional argument, if not specified will search path.
+    chr_opt = Options().add_argument("--disable-extentions")
     print("Opening chrome")
     driver.get(url)
 
@@ -134,12 +135,4 @@ def parse_dns(url):
         ))
 
     return items
-
-print(parse_dns("https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?order=6&f[rv2z]=13j0y6")[0]["name"])
-
-#def test_dns():
-    #x = parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&f[70m]=emb2")
-    #for xx in x:
-        #print(xx['name'], xx['price'], xx['link'])
-
-#test_dns()
+bot.polling(none_stop=True, interval=0)
