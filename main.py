@@ -83,7 +83,7 @@ def bred(message):
         item3=types.KeyboardButton("AM4_4CORE")
         item4=types.KeyboardButton("AM4_16CORE")
         markup.add(item1,item2,item3,item4)
-        bot.send_message(message.chat.id,'Теперь напиши сколько ядер нужно в твоем процессоре.',reply_markup=markup)
+        bot.send_message(message.chat.id,'Теперь напиши сколько ядер должно быть в твоем процессоре.',reply_markup=markup)
 
     if message.text == "AM4_8CORE":
 
@@ -116,7 +116,7 @@ def bred(message):
         item2=types.KeyboardButton("1151v2_4CORE")
         markup.add(item1,item2)
     
-        bot.send_message(message.chat.id,'Теперь напиши сколько ядер нужно в твоем процессоре.',reply_markup=markup)
+        bot.send_message(message.chat.id,'Теперь напиши сколько ядер должно быть в твоем процессоре.',reply_markup=markup)
     if message.text == "1151v2_6CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zg&f[mo]=27k")
@@ -146,7 +146,7 @@ def bred(message):
         item2=types.KeyboardButton("LGA1200_6CORE")
         item3=types.KeyboardButton("LGA1200_4CORE")
         markup.add(item1,item2,item3)
-        bot.send_message(message.chat.id,'Теперь напиши сколько ядер нужно в твоем процессоре.',reply_markup=markup)
+        bot.send_message(message.chat.id,'Теперь напиши сколько ядер должно быть в твоем процессоре.',reply_markup=markup)
 
     if message.text == "LGA1200_8CORE":
 
