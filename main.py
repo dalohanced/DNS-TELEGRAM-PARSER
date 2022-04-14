@@ -108,7 +108,17 @@ def bred(message):
     if message.text == "AM4_Mb":
         x=parse_dns("https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?order=6&f[rv2z]=13iyb1")
         bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
-    
+        #bot.send_message(message.chat.id,'Сколько слотов под  M.2 ССД вам нужно?',reply_markup=markup)
+
+        #markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
+
+        #item1=types.KeyboardButton("1")
+        #item2=types.KeyboardButton("2")
+        #item3=types.KeyboardButton("3")
+        #markup.add(item1,item2)
+
+        #bot.send_message(message.chat.id,'',reply_markup=markup)
+
     if message.text == "1151v2_CPU":
         markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
 
