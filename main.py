@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from telebot import types
-import requests                                     #pip install bs4 lxml selenium
+import requests                                                #pip install bs4 lxml selenium
 from bs4 import BeautifulSoup
 
 
@@ -88,26 +88,26 @@ def bred(message):
     if message.text == "AM4_8CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zc&f[mo]=27m")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
 
     if message.text == "AM4_6CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zc&f[mo]=27k")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     if message.text == "AM4_4CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zc&f[mo]=27j")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])  
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)  
     
     if message.text == "AM4_16CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zc&f[mo]=27n")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     
     
     if message.text == "AM4_Mb":
         x=parse_dns("https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?order=6&f[rv2z]=13iyb1")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
         #bot.send_message(message.chat.id,'Сколько слотов под  M.2 ССД вам нужно?',reply_markup=markup)
 
         #markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -117,7 +117,7 @@ def bred(message):
         #item3=types.KeyboardButton("3")
         #markup.add(item1,item2)
 
-        #bot.send_message(message.chat.id,'',reply_markup=markup)
+        #ыbot.send_message(message.chat.id,'',reply_markup=markup)
 
     if message.text == "1151v2_CPU":
         markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -130,24 +130,24 @@ def bred(message):
     if message.text == "1151v2_6CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zg&f[mo]=27k")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     
     if message.text == "1151v2_4CORE":
 
             x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zg&f[mo]=27j")
-            bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+            bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
 
     if message.text == "1151v2_Mb":
         x=parse_dns("https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?order=6&f[rv2z]=13j0rf")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     
     if message.text == "TR4_CPU":
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&f[ykgd]=1ii0zp")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     
     if message.text == "TR4_Mb":
         x=parse_dns("https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?order=6&f[rv2z]=13j0yi")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     
     if message.text == "LGA_1200_CPU":
         markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -161,20 +161,20 @@ def bred(message):
     if message.text == "LGA1200_8CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zi&f[mo]=27m")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
     if message.text == "LGA1200_6CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zi&f[mo]=27k")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
     
     if message.text == "LGA1200_4CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zi&f[mo]=27j")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
     
     if message.text == "LGA_1200_Mb":
         x=parse_dns("https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?order=6&f[rv2z]=13j0y6")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" "+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
 
 
 
