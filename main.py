@@ -161,20 +161,20 @@ def bred(message):
     if message.text == "LGA1200_8CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zi&f[mo]=27m")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     if message.text == "LGA1200_6CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zi&f[mo]=27k")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     
     if message.text == "LGA1200_4CORE":
 
         x=parse_dns("https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/?order=6&stock=now-today-tomorrow-later&f[ykgd]=1ii0zi&f[mo]=27j")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
     
     if message.text == "LGA_1200_Mb":
         x=parse_dns("https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?order=6&f[rv2z]=13j0y6")
-        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"])
+        bot.send_message(message.chat.id,x[0]["name"]+" "+ x[0]["price"]+" \n"+ x[0]["link"],reply_markup=murkup)
 
 
 
